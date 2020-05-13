@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Number Guessing Name</h1>
+    <p> We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you
+        if
+        your guess was too high or too low.</p>
+    <div class="form my-6">
+        <label for="guessField" class="font-bold">Enter a guess: </label>
+        <input type="text" id="guessField"
+            class="mx-2 guessField bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 appearance-none leading-normal">
+        <input type="submit" value="Submit guess"
+            class="guessSubmit border bg-red-500 text-white px-3 py-2 rounded shadow hover:bg-red-700 cursor-pointer">
+    </div>
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
